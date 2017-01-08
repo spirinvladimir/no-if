@@ -1,14 +1,13 @@
 {
   "name": "noif",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Do not use if keyword",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
-  "author": "",
+  "author": "Vladimir Spirin",
   "license": "ISC",
   "dependencies": {
-    "esprima": "^3.1.3"
+    "esprima": "3.1.3"
   }
 }
