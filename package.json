@@ -1,6 +1,6 @@
 {
-  "name": "noif",
-  "version": "1.0.0",
+  "name": "no-if",
+  "version": "1.0.1",
   "description": "Do not use if keyword",
   "scripts": {
     "test": "node test"
