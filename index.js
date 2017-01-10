@@ -3,17 +3,17 @@ var
 
 module.exports = function (code) {
   var
-    i,
+    i = 0,
     token,
     tokens = esprima.tokenize(code),
     length = tokens.length;
 
   while (i < length) {
     token = tokens[i];
-    i = node.type === 'Keyword' && node.value === 'if'
-      ? length
+    i = token.type === 'Keyword' && token.value === 'if'
+      ? Infinity
       : i + 1;
   }
 
-  return i === length;
+  return i <= length;
 };

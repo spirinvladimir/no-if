@@ -1,10 +1,10 @@
 var
-  noif = require('./index');
+  noIf = require('./index');
   testPass = function () {
-    return true;
+    return true === noIf('var a = 2 * 3;')
   },
   testFail = function () {
-    return true;
+    return false === noIf('if (window.a) a *= 2;');
   };
 
 process.exit(
