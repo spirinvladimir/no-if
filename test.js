@@ -1,5 +1,5 @@
 var
-  noIf = require('./index');
+  noIf = require('./index'),
   testPass = function () {
     return true === noIf('var a = 2 * 3;')
   },
