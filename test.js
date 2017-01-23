@@ -5,10 +5,11 @@ var
   },
   testFail = function () {
     return false === noIf('if (window.a) a *= 2;');
-  };
+  },
+  exitCode;
 
-process.exit(
-  testPass() && testFail()
-    ? 0
-    : 1
-);
+exitCode = testPass() && testFail()
+  ? 0
+  : 1;
+
+process.exit(exitCode);
