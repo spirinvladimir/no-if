@@ -3,8 +3,7 @@
   "version": "1.0.3",
   "description": "Do not use if keyword",
   "scripts": {
-    "test": "node test",
-    "ci": "istanbul cover test.js"
+    "test": "istanbul cover test.js"
   },
   "author": "Vladimir Spirin",
   "license": "ISC",
